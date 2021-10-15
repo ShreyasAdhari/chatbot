@@ -9,3 +9,8 @@
 --> SCREENSHOTS
 
 ![alt text](imgs/chatbot1.PNG)
+![alt text](imgs/chatbot2.PNG)
+![alt text](imgs/chatbot3.PNG)
+![alt text](imgs/chatbot4.PNG)
+
+
