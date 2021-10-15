@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
+}
+
+body {
+  box-sizing: border-box;
+  background: #eee;
+  padding: 1.875rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 34.375rem;
+  width: 34.375rem;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.875rem;
+  box-shadow: 0 2px 6px rgba(51, 51, 51, 0.1);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+  margin-top: 1.875rem;
+}
+
+.form__title {
+  font-weight: 700;
+}
+
+.form__subtitle {
+  padding: 0.5rem 0;
+  color: #888;
+}
+
+.form__input, .form__input--fullwidth--icon input, .form__input--fullwidth {
+  border-radius: 0.5rem;
+  border: 0;
+  background: #eee;
+  padding: 1rem;
+  font-size: 0.75rem;
+  transition: all 0.4s ease-in-out;
+  color: #333;
+}
+.form__input:focus, .form__input--fullwidth--icon input:focus, .form__input--fullwidth:focus {
+  background: rgba(255, 160, 122, 0.3);
+  border-radius: 0.5rem;
+  outline: 0;
+}
+
+.form__input--fullwidth {
+  grid-column: span 2;
+}
+
+.form__input--fullwidth--icon {
+  grid-column: span 2;
+  position: relative;
+}
+.form__input--fullwidth--icon input {
+  width: 100%;
+}
+
+.form__input__icon {
+  position: absolute;
+  right: calc(1.875rem / 2);
+  top: 50%;
+  transform: translateY(-50%);
+  color: salmon;
+}
+
+.form__button, .form__button--secondary {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background: salmon;
+  display: inline-block;
+  width: 150px;
+  justify-self: end;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+  outline: 0;
+}
+.form__button:hover, .form__button--secondary:hover {
+  background: lightsalmon;
+}
+
+.form__button--secondary {
+  border: 0;
+  background: 0;
+  justify-self: start;
+  color: #333;
+}

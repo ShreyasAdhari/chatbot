@@ -1,0 +1,24 @@
+language: en
+pipeline:
+  - name: SpacyNLP
+    model: external_data/spacy.word2vec.model
+  - name: SpacyTokenizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+    epochs: 70
+    random_seed: 2
+  - name: EntitySynonymMapper
+
+policies:
+  - name: MemoizationPolicy
+    max_history: 5
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+  - name: MappingPolicy
+  - name: FormPolicy
+  - name: FallbackPolicy
+    nlu_threshold: 0.4
+    core_threshold: 0.4
+    ambiguity_threshold: 0.1
+    fallback_action_name: action_my_fallback
