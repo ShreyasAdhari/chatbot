@@ -1,6 +1,6 @@
-## [RASA CHATBOT]
+# [RASA CHATBOT]
 
-## Tech Stack
+## Requirements
 - Python
 - Rasa
 - Node js
