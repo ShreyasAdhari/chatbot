@@ -1,4 +1,4 @@
-# [RASA CHATBOT]
+# RASA CHATBOT
 
 ## Requirements
 - Python
