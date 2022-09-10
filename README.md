@@ -1,12 +1,23 @@
-# CHATBOT USING RASA
+## [RASA CHATBOT]
 
---> Chatbot made using RASA. 
+## Tech Stack
+- Python
+- Rasa
+- Node js
+- Gensim
 
---> The chatbot was used in my college project ( e-commerce website) to retrieve orders, place orders, delete orders, show products, get help with certain products
+## Chatbot Features
+- Chatbot was made for use on ecommerce platforms.
+- It could you help you with buying electronics products like laptops or mobile phones by asking a series of specifications and then retrieving the results from the database.
+- It could help you alter orders by changing their delivery address, quantity or by cancelling it.
+- It could engage in a limited conversation with you.
 
---> Database used was MongoDB
+## Training
+- Rasa Framework was used for creating the chatbot. 
+- Word2Vec model was trained on comments scrapped from certain websites.
+-
 
---> SCREENSHOTS
+## SCREENSHOTS
 
 ![alt text](imgs/chatbot1.PNG)
 ![alt text](imgs/chatbot2.PNG)
